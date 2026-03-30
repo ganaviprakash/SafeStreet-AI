@@ -1,4 +1,4 @@
 # SafeStreet-AI
-SafeStreet AI is a safety awareness application that helps users evaluate how safe a location is based on user-provided ratings. By entering a location and a safety score, the system categorizes the area as Safe, Moderate, or Unsafe.
+SafeStreet AI is a smart safety awareness application that helps users evaluate the safety of locations based on community input. Users can enter a location and provide a rating, which is analyzed to generate a safety status such as Safe, Moderate, or Unsafe.
 
-The project aims to build a crowdsourced safety network, helping people make better decisions in unfamiliar places, with potential to expand into an AI-driven system for predicting safety patterns.
+The goal is to build a crowdsourced safety network that helps people make informed decisions about their surroundings, with potential to evolve into an AI-driven system for predicting safety patterns and identifying high-risk areas.
