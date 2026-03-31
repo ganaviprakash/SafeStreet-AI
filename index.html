@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeStreet AI - Aesthetic</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated background blobs -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <div class="app-container fade-in">
+        <header class="app-header">
+            <div class="logo">🛡️ SafeStreet <span>AI</span></div>
+            <p class="subtitle">Community-driven safety insights, elegantly summarized.</p>
+        </header>
+
+        <main>
+            <!-- Evaluation Card -->
+            <div class="glass-card main-card">
+                <h2>📍 Evaluate Location</h2>
+                <form id="eval-form">
+                    <div class="input-group">
+                        <label for="location">Location Name</label>
+                        <input type="text" id="location" placeholder="e.g. Central Park, Main St." required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="rating">Your Safety Rating: <span id="rating-val">3</span> ⭐️</label>
+                        <input type="range" id="rating" min="1" max="5" value="3" step="1" class="slider">
+                        <div class="slider-labels">
+                            <span>1 (Unsafe 🔴)</span>
+                            <span>3 (Moderate 🟡)</span>
+                            <span>5 (Safe 🟢)</span>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Analyze 🚀</button>
+                </form>
+            </div>
+
+            <!-- Results Card -->
+            <div class="glass-card results-card hidden" id="results-card">
+                <h3>🤖 AI Analysis Result</h3>
+                
+                <div class="status-badge" id="status-badge">
+                    <!-- Status injected here -->
+                </div>
+
+                <div class="risk-section">
+                    <div class="risk-header">
+                        <span>Simulated Risk Score</span>
+                        <span id="risk-value" class="risk-value">0%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-fill"></div>
+                    </div>
+                </div>
+
+                <div class="ai-message">
+                    <span class="icon">💡</span>
+                    <p id="ai-insight">AI insight message goes here.</p>
+                </div>
+            </div>
+
+            <!-- History Section -->
+            <div class="glass-card history-card" id="history-section" style="display: none;">
+                <h3>📜 Previous Entries</h3>
+                <div class="history-list" id="history-list">
+                    <!-- Entries injected here -->
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
